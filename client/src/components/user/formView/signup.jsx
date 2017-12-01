@@ -59,6 +59,7 @@ class Signup extends React.Component {
   }
 
   hanldeSubmit() {
+    console.log('im inside')
 
     // if (this.state.username === '') {
     //   return alert('Oops! Username cannot be empty. Let\'s try that again.');
@@ -109,7 +110,7 @@ class Signup extends React.Component {
         bsStyle="primary"
         onClick={()=> {
           this.hanldeSubmit()
-            .then(()=> history.push('/Game'))
+            .then(()=> history.push('/Character'))
             .catch(()=> console.log('there was an error'))
         }}>
         Create Account</Button>
