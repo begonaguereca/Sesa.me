@@ -4,7 +4,11 @@
   "author": "",
   "license": "ISC",
   "engines": {
+<<<<<<< HEAD
     "node": "6.11.1",
+=======
+    "node": "6.9.5",
+>>>>>>> heroku changes
     "npm": "3.10.10"
   },
   "scripts": {
