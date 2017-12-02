@@ -7,6 +7,7 @@ const parser = require('body-parser');
 const env = require('dotenv').load();
 const exphbs = require('express-handlebars');
 const router = require('./routes.js');
+const path = require('path');
 
 // Body Parser
 app.use(parser.urlencoded({ extended: true }));
@@ -48,3 +49,9 @@ console.log('Listening on', app.get('port'));
 
 //Socket
 
+
+
+//react router's path
+app.get('/**', (req, res) => {
+  res.sendFile(path.join(__dirname, '../client/dist/index.html'));
+});
